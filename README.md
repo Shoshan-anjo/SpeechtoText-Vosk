@@ -1,9 +1,6 @@
-```markdown
 # 🗣️ Speech-to-Text con Vosk (Español)
 
 Este proyecto permite transcribir audio a texto utilizando el modelo offline de Vosk. Incluye scripts para convertir archivos de audio en texto, ya sea desde archivos pregrabados o directamente desde el micrófono.
-
----
 
 ## 📁 Estructura del proyecto
 
@@ -11,8 +8,6 @@ Este proyecto permite transcribir audio a texto utilizando el modelo offline de 
 - `audiotxt.py`: Transcribe un único archivo `.wav` (ya en formato correcto) y guarda la transcripción.
 - `audiorealtime.py`: Transcribe un archivo de audio en tiempo real mientras lo procesa.
 - `microfono.py`: Transcribe en vivo desde el micrófono usando el modelo de Vosk.
-
----
 
 ## 🧩 Requisitos
 
@@ -23,8 +18,6 @@ Este proyecto permite transcribir audio a texto utilizando el modelo offline de 
   ```
 - FFmpeg instalado y agregado al PATH (para conversión de audio en `convaudiotxt.py`).
 - Modelo de Vosk en español descargado y descomprimido (ej: `vosk-model-es-0.42`).
-
----
 
 ## ⚙️ Scripts
 
@@ -80,9 +73,14 @@ Este script:
 
 - Motor de reconocimiento: [Vosk API](https://alphacephei.com/vosk/)
 - Autor del proyecto: 
-[Shoshan-anjo](https://github.com/Shoshan-anjo)
+<a href="https://github.com/Shoshan-anjo" target="_blank" style="text-decoration: none;">
+  <div style="display: inline-block; text-align: center;">
+    <img src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3d3FsMGh1MnFtM2U2dXhqdnY3aG8xMzl2c2hpdW1uNXQ0cmx6MDBrNCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/25Itcrcuwkyq3ohubJ/giphy.gif" width="100" style="border-radius: 50%; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"/>
+    <br/>
+    <strong>Shoshan-anjo</strong>
+  </div>
+</a>
 
-![GitHub Banner](https://readme-typing-svg.herokuapp.com?font=Fira+Code&duration=2000&pause=1000&color=35F779&center=true&vCenter=true&width=435&lines=Desarrollador+Python+%7C+Automatización+RPA;Apasionado+por+la+IA+y+la+eficiencia)
 
 ---
 
