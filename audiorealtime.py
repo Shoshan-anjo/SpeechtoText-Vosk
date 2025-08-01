@@ -2,6 +2,9 @@ import wave
 import json
 from vosk import Model, KaldiRecognizer
 
+#ejemplo de uso de ffmpeg para convertir un archivo de audio a WAV mono 16KHz
+#ffmpeg -i "audio_original.wav" -ar 16000 -ac 1 -c:a pcm_s16le "audio_convertido.wav"
+
 # Ruta al modelo Vosk (ya descomprimido)
 MODEL_PATH = r"C:\Users\aj.montalvo\Desktop\Nueva carpeta\Python - Vosk\vosk-model-es-0.42"
 

@@ -72,19 +72,8 @@ Este script:
 ## 📄 Créditos
 
 - Motor de reconocimiento: [Vosk API](https://alphacephei.com/vosk/)
-- Autor del proyecto: 
-<a href="https://github.com/Shoshan-anjo" target="_blank" style="text-decoration: none;">
-  <div style="display: inline-block; text-align: center;">
-    <img src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3d3FsMGh1MnFtM2U2dXhqdnY3aG8xMzl2c2hpdW1uNXQ0cmx6MDBrNCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/25Itcrcuwkyq3ohubJ/giphy.gif" width="100" style="border-radius: 50%; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"/>
-    <br/>
-    <strong>Shoshan-anjo</strong>
+- Autor del proyecto: <a href="https://github.com/Shoshan-anjo" target="_blank" style="text-decoration: none;"><strong>Shoshan-anjo</strong>
   </div>
 </a>
 
 
----
-
-## 🛠️ Licencia
-
-Este proyecto es de código abierto y puede adaptarse libremente para uso educativo o comercial según los términos de la licencia Vosk.
-```
