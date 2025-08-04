@@ -61,6 +61,46 @@ Este script:
 🎙️ Perfecto para prototipos de asistentes de voz u otros proyectos en vivo.
 
 ---
+## 🌀 multivosk.py – Transcripción de múltiples audios en lote
+
+Este script permite seleccionar una carpeta con múltiples archivos `.wav`, convertirlos si es necesario, y transcribir cada uno usando el modelo de Vosk. Guarda un archivo `.txt` por cada audio con su respectiva transcripción.
+
+---
+
+### 🧠 ¿Qué hace?
+
+- Recorre automáticamente todos los archivos `.wav` en una carpeta.
+- Convierte los audios al formato compatible (WAV 16kHz mono) usando FFmpeg si es necesario.
+- Transcribe el contenido de cada archivo.
+- Guarda cada transcripción como un archivo `.txt` con el mismo nombre base del audio.
+
+---
+
+### 🚀 Cómo usarlo
+
+1. Ejecuta el script.
+2. Ingresa la ruta de la carpeta que contiene los audios `.wav`.
+3. El script procesará todos los archivos y generará transcripciones automáticamente.
+---
+
+### 📁 Ejemplo de entrada
+
+```
+📁 Carpeta: C:\audios_prueba\
+├── cliente1.wav
+├── cliente2.wav
+└── grabacion_voz.wav
+```
+---
+
+### 📄 Resultado esperado
+
+```
+📄 cliente1_transcripcion.txt
+📄 cliente2_transcripcion.txt
+📄 grabacion_voz_transcripcion.txt
+```
+---
 
 ## 📌 Notas
 
