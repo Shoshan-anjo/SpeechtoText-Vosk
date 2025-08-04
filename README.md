@@ -1,4 +1,3 @@
-```markdown
 # 🗣️ Speech-to-Text con Vosk (Español)
 
 Este proyecto permite transcribir audio a texto utilizando el modelo offline de Vosk. Incluye scripts para convertir archivos de audio en texto, ya sea desde archivos pregrabados o directamente desde el micrófono.
