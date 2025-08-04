@@ -1,6 +1,9 @@
+```markdown
 # 🗣️ Speech-to-Text con Vosk (Español)
 
 Este proyecto permite transcribir audio a texto utilizando el modelo offline de Vosk. Incluye scripts para convertir archivos de audio en texto, ya sea desde archivos pregrabados o directamente desde el micrófono.
+
+---
 
 ## 📁 Estructura del proyecto
 
@@ -8,6 +11,9 @@ Este proyecto permite transcribir audio a texto utilizando el modelo offline de 
 - `audiotxt.py`: Transcribe un único archivo `.wav` (ya en formato correcto) y guarda la transcripción.
 - `audiorealtime.py`: Transcribe un archivo de audio en tiempo real mientras lo procesa.
 - `microfono.py`: Transcribe en vivo desde el micrófono usando el modelo de Vosk.
+- `multivosk.py`: Transcribe múltiples audios `.wav` de una carpeta, generando un archivo `.txt` por cada uno.
+
+---
 
 ## 🧩 Requisitos
 
@@ -16,8 +22,10 @@ Este proyecto permite transcribir audio a texto utilizando el modelo offline de 
   ```bash
   pip install vosk sounddevice
   ```
-- FFmpeg instalado y agregado al PATH (para conversión de audio en `convaudiotxt.py`).
+- FFmpeg instalado y agregado al PATH (para conversión de audio).
 - Modelo de Vosk en español descargado y descomprimido (ej: `vosk-model-es-0.42`).
+
+---
 
 ## ⚙️ Scripts
 
@@ -61,29 +69,25 @@ Este script:
 🎙️ Perfecto para prototipos de asistentes de voz u otros proyectos en vivo.
 
 ---
-## 🌀 multivosk.py – Transcripción de múltiples audios en lote
+
+### `multivosk.py` – Transcripción de múltiples audios en lote
 
 Este script permite seleccionar una carpeta con múltiples archivos `.wav`, convertirlos si es necesario, y transcribir cada uno usando el modelo de Vosk. Guarda un archivo `.txt` por cada audio con su respectiva transcripción.
 
----
-
-### 🧠 ¿Qué hace?
+#### 🧠 ¿Qué hace?
 
 - Recorre automáticamente todos los archivos `.wav` en una carpeta.
 - Convierte los audios al formato compatible (WAV 16kHz mono) usando FFmpeg si es necesario.
 - Transcribe el contenido de cada archivo.
 - Guarda cada transcripción como un archivo `.txt` con el mismo nombre base del audio.
 
----
-
-### 🚀 Cómo usarlo
+#### 🚀 Cómo usarlo
 
 1. Ejecuta el script.
 2. Ingresa la ruta de la carpeta que contiene los audios `.wav`.
 3. El script procesará todos los archivos y generará transcripciones automáticamente.
----
 
-### 📁 Ejemplo de entrada
+#### 📁 Ejemplo de entrada
 
 ```
 📁 Carpeta: C:\audios_prueba\
@@ -91,29 +95,26 @@ Este script permite seleccionar una carpeta con múltiples archivos `.wav`, conv
 ├── cliente2.wav
 └── grabacion_voz.wav
 ```
----
 
-### 📄 Resultado esperado
+#### 📄 Resultado esperado
 
 ```
 📄 cliente1_transcripcion.txt
 📄 cliente2_transcripcion.txt
 📄 grabacion_voz_transcripcion.txt
 ```
+
 ---
 
 ## 📌 Notas
 
 - Todos los scripts usan el mismo modelo de Vosk. Asegúrate de actualizar la ruta en `MODEL_PATH` según tu ubicación local.
-- Si los audios no están en formato `WAV PCM mono 16kHz`, `convaudiotxt.py` se encargará de convertirlos automáticamente usando FFmpeg.
+- Si los audios no están en formato `WAV PCM mono 16kHz`, los scripts con conversión automática (`convaudiotxt.py`, `multivosk.py`) utilizarán FFmpeg para ajustarlos.
 
 ---
 
 ## 📄 Créditos
 
 - Motor de reconocimiento: [Vosk API](https://alphacephei.com/vosk/)
-- Autor del proyecto: <a href="https://github.com/Shoshan-anjo" target="_blank" style="text-decoration: none;"><strong>Shoshan-anjo</strong>
-  </div>
-</a>
-
-
+- Autor del proyecto: [**Shoshan-anjo**](https://github.com/Shoshan-anjo)
+```
