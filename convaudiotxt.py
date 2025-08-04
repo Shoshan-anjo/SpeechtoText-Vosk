@@ -3,7 +3,10 @@ import json
 import os
 import subprocess
 from vosk import Model, KaldiRecognizer
+import time
 
+inicio = time.time()
+print("🚀 Iniciando Proceso...")
 
 def seleccionar_audio_desde_carpeta():
     carpeta = input("📁 Ingresá la ruta de la carpeta que contiene los audios:\n> ").strip('" ')
@@ -110,3 +113,6 @@ def transcribir_audio_a_txt(model_path, audio_original):
 MODEL_PATH = r"C:\Users\aj.montalvo\Desktop\Nueva carpeta\Python - Vosk\vosk-model-es-0.42"
 AUDIO_ORIGINAL = seleccionar_audio_desde_carpeta()
 transcribir_audio_a_txt(MODEL_PATH, AUDIO_ORIGINAL)
+
+fin = time.time()
+print(f"✅ Proceso completado en {fin - inicio:.2f} segundos.")
